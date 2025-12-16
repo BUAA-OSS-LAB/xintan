@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xin Tan - Beihang University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css">
+    <style>
+        /* --- 全局样式 (经典海军蓝版) --- */
+        body { 
+            font-family: "Georgia", "Times New Roman", Times, serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #ffffff; 
+            color: #333; 
+            line-height: 1.6; 
+        }
+
+        /* 链接颜色 */
+        a { 
+            text-decoration: none; 
+            color: #003366; /* 经典蓝 */
+        }
+        a:hover { 
+            text-decoration: underline; 
+            color: #002244; /* 悬停稍微加深 */
+        }
+        
+        /* --- 导航栏 --- */
+        header { 
+            background-color: #003366; /* 核心修改：经典海军蓝 */
+            color: white; 
+            padding: 0 20px; 
+            height: 60px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        .header-container { width: 100%; max-width: 1000px; display: flex; justify-content: space-between; align-items: center; }
+        .header-name { font-size: 24px; font-weight: normal; color: white; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { color: white; font-size: 15px; font-family: Arial, sans-serif; opacity: 0.9; }
+        nav ul li a:hover { text-decoration: underline; opacity: 1; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        
+        /* 个人信息区 */
+        .profile-section { display: flex; margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 30px; }
+        .profile-photo { flex: 0 0 200px; margin-right: 40px; }
+        .profile-photo img { width: 100%; border-radius: 4px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .profile-info { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .profile-name { font-size: 22px; font-weight: bold; margin-bottom: 10px; color: #003366; }
+        .social-icons { margin-top: 15px; }
+        .social-icons a { font-size: 20px; margin-right: 15px; color: #555; }
+        .social-icons a:hover { color: #003366; }
+
+        /* 标题样式 */
+        h2 { font-size: 22px; color: #003366; margin-top: 40px; margin-bottom: 20px; border-bottom: 1px solid #ddd; padding-bottom: 10px; }
+        h3 { font-size: 18px; color: #333; margin-top: 25px; margin-bottom: 10px; }
+        
+        /* 高亮框 */
+        .highlight-box { 
+            background-color: #f0f4f8; /* 极浅蓝灰背景 */
+            border-left: 4px solid #003366; /* 蓝边框 */
+            padding: 15px; 
+            margin: 20px 0; 
+            font-style: italic; 
+            color: #444; 
+        }
+        
+        /* 列表样式 */
+        ul.news-list { list-style: none; padding-left: 0; }
+        ul.news-list li { margin-bottom: 12px; display: flex; align-items: baseline; }
+        .news-icon { margin-right: 10px; font-size: 18px; }
+        .news-date { font-weight: bold; min-width: 90px; color: #444; flex-shrink: 0; }
+        
+        ul.simple-list { list-style-type: disc; margin-left: 20px; color: #444; }
+        ul.simple-list li { margin-bottom: 8px; }
+
+        ul.research-list { list-style-type: square; margin-left: 20px; color: #444; }
+        ul.research-list li { margin-bottom: 12px; }
+        ul.research-list strong { color: #003366; }
+
+        footer { margin-top: 60px; border-top: 1px solid #eee; padding: 20px; text-align: center; font-size: 13px; color: #888; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-name">BUAA OSS-LAB</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="font-weight: bold; text-decoration: underline;">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="profile-section">
+            <div class="profile-photo">
+                <img src="images/xin_tan.png" alt="Xin Tan" onerror="this.src='https://via.placeholder.com/200x250?text=Xin+Tan'">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name">Dr. Xin Tan (谭鑫)</div>
+                <div>Tenured Associate Professor</div>
+                <div>School of Computer Science and Engineering, Beihang University</div>
+                <div>37 Xueyuan Road, Haidian District, Beijing, P.R. China, 100191</div>
+                
+                <div class="social-icons">
+                    <a href="mailto:你的邮箱@buaa.edu.cn"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=vi1H6KMAAAAJ&hl=en" target="_blank"><i class="ai ai-google-scholar"></i></a>
+                    <a href="https://dblp.org/pid/89/6413-3.html" target="_blank"><i class="ai ai-dblp"></i></a>
+                    <a href="https://conf.researchr.org/profile/xintan" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-content">
+            <p>
+                Hi! I am a <strong> Associate Professor in the School of Computer Science and Engineering at Beihang University, China. </strong>I received my Ph.D. in 2021 from the School of Electronics Engineering and Computer Science (EECS), Peking University, where I was fortunate to be supervised by Prof. Minghui Zhou. I am a recipient of the First Prize of the Beijing Science and Technology Progress Award (2024) and was selected for the Young Elite Scientists Sponsorship Program of the Beijing High Innovation Plan (2025).
+            </p>
+            <p>
+                My research lies broadly in <i>empirical software engineering</i>, with a particular emphasis on open source ecosystems. I am especially interested in how newcomers participate, learn, and grow in open source communities, and how project ecosystems can better support newcomer onboarding and long-term contributor retention. In recent work, I have also been exploring how AI—especially large language models (LLMs)—can assist newcomers by lowering entry barriers and providing personalized, context-aware onboarding support.
+            </p>
+            <p>
+                More broadly, my work integrates empirical methods, big data analytics, deep learning, and LLMs to uncover new insights into software development and to build intelligent tools that enhance developer productivity and software quality. I have published over 30 papers in premier venues such as ICSE, ESEC/FSE, ASE, TSE, TOSEM, and CSCW, and my work has been recognized with ACM SIGSOFT Distinguished Paper Awards.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Open Positions:</strong> Our group is actively recruiting self-motivated students interested in AI for software development, open source software, or empirical software engineering—especially those excited about <strong>AI-assisted newcomer onboarding in open source. If you are interested in working with us, feel free to reach out! </strong>
+            </div>
+
+            <!-- News Section (Updated with Emoji) -->
+            <h2>News</h2>
+            <ul class="news-list">
+                <li>
+                    <span class="news-icon">🎉</span>
+                    <span class="news-date">Dec 2025</span>
+                    <span>Paper "Understanding and Enhancing CS Students' Interaction Experience with AI Coding Assistant Tools" has been accepted to TOSEM 2025! Congratulations to Xiao Long!</span>
+                </li>
+                <li>
+                    <span class="news-icon">🎉</span>
+                    <span class="news-date">Nov 2025</span>
+                    <span>Paper "Facilitating Wise Decision-Making for Bounty Backers in Open Source Software Communities" has been accepted to TSE 2025! Congratulations to Bou Hou!</span>
+                </li>
+                <li>
+                    <span class="news-icon">🎉</span>
+                    <span class="news-date">Aug 2025</span>
+                    <span>Paper "OSSerCopilot: An LLM-Driven Tutoring System for Fostering Open Source Competency in Software Engineering Education" has been accepted to CEISEE 2025 and won the prize "<span class="tag tag-award"><i class="fas fa-trophy"></i>Best Paper Award</span>". Congratulations to Jingyi Tan, Weimiao Ren and Keging Fan!</span>
+                </li>
+                <li>
+                    <span class="news-icon">🎉</span>
+                    <span class="news-date">Jul 2025</span>
+                    <span>I am a recipient of the First Prize of the Beijing Science and Technology Progress Award (2024)</span>
+                </li>
+                <li>
+                    <span class="news-icon">🎉</span>
+                    <span class="news-date">Feb 2025</span>
+                    <span>Paper "Revolutionizing Newcomers' Onboarding Process in OSS Communities: The Future AI Mentor" has been accepted to FSE 2025! Congratulations to Xiao Long!</span>
+                </li>
+            </ul>
+
+            <!-- Research Interests Section -->
+            <h2>Current Research Interests</h2>
+            <ul class="research-list">
+                <li>
+                    <strong>Open Source Software Development:</strong> Investigating group collaboration mechanisms to enhance development efficiency and improve software quality in open source communities.
+                </li>
+                <li>
+                    <strong>Intelligent Software Development (AI for SE):</strong> Exploring the impact of AI-assisted tools (e.g., LLMs) on software development patterns and evaluating the effectiveness of these tools.
+                </li>
+                <li>
+                    <strong>Human-Computer Interaction (HCI) in SE:</strong> Studying how developers communicate and collaborate effectively in modern internet-based development scenarios.
+                </li>
+                <li>
+                    <strong>Data-Driven Software Engineering:</strong> Leveraging massive software lifecycle data combined with data mining and AI to achieve large-scale, high-efficiency production of high-quality software.
+                </li>
+                <li>
+                    <strong>Empirical Software Engineering:</strong> Conducting empirical studies to build theories and provide insights that improve the quality and productivity of software development.
+                </li>
+            </ul>
+
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 Xin Tan. css design: Xiao Long.
+    </footer>
+</body>
+</html>

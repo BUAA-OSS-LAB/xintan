@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - Xin Tan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* 全局样式 (经典海军蓝版) */
+        body { font-family: "Georgia", "Times New Roman", Times, serif; margin: 0; padding: 0; background-color: #ffffff; color: #333; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; } 
+        
+        header { background-color: #003366; color: white; padding: 0 20px; height: 60px; display: flex; align-items: center; justify-content: center; }
+        .header-container { width: 100%; max-width: 1000px; display: flex; justify-content: space-between; align-items: center; }
+        .header-name { font-size: 24px; font-weight: normal; color: white; }
+        nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+        nav ul li { margin-left: 25px; }
+        nav ul li a { color: white; font-size: 15px; font-family: Arial, sans-serif; opacity: 0.9; text-decoration: none; }
+        nav ul li a:hover { text-decoration: underline; opacity: 1; }
+        
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h2 { font-size: 24px; color: #003366; margin-top: 40px; margin-bottom: 25px; border-bottom: 2px solid #eee; padding-bottom: 10px; font-weight: bold; }
+
+        /* 网格布局 */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .member-card {
+            background: #fff;
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            text-align: left; 
+        }
+
+        /* 悬停效果：经典蓝边框 */
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,51,102,0.15); /* 阴影带一点蓝 */
+            border-color: #003366; 
+        }
+
+        .photo-wrapper {
+            width: 100%;
+            height: 240px; 
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .member-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            transition: transform 0.5s ease;
+        }
+
+        .member-card:hover .member-photo {
+            transform: scale(1.03); 
+        }
+
+        .member-info { padding: 15px; }
+        .member-name { font-size: 18px; font-weight: bold; color: #003366; margin-bottom: 5px; }
+        .member-role { font-size: 13px; color: #666; line-height: 1.4; font-family: Arial, sans-serif; }
+        
+        .advisor-card { max-width: 250px; }
+        footer { margin-top: 60px; border-top: 1px solid #eee; padding: 20px; text-align: center; font-size: 13px; color: #888; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-name">BUAA OSS-LAB</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="team.html" style="font-weight: bold; text-decoration: underline;">Team</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="teaching.html">Teaching</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Advisor Section -->
+        <h2>Advisor</h2>
+        <div class="team-grid">
+            <!-- 你的卡片 -->
+            <a href="index.html" class="member-card advisor-card">
+                <div class="photo-wrapper">
+                    <!-- 请确保 profile.jpg 存在，或者修改路径 -->
+                    <img src="images/xin_tan.png" alt="Xin Tan" class="member-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Xin+Tan'">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">Xin Tan (谭鑫)</div>
+                    <div class="member-role">
+                        Tenured Associate Professor<br>
+                        Beihang University
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Current Students Section -->
+        <h2>Current Students</h2>
+        <div class="team-grid">
+            
+            <!-- 学生 1 -->
+            <a href="#" target="_blank" class="member-card">
+                <div class="photo-wrapper">
+                    <img src="images/xiao_long.jpg" alt="Student Name" class="member-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Student+Photo'">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">Xiao Long (龙骁)</div>
+                    <div class="member-role">
+                        3rd Year Master Student<br>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 学生 2 -->
+            <a href="#" class="member-card">
+                <div class="photo-wrapper">
+                    <img src="images/geyu_huang.jpeg" alt="Student Name" class="member-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Student+Photo'">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">Geyu Huang (黄革宇)</div>
+                    <div class="member-role">
+                        2nd Year Master Student<br>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 学生 3 -->
+            <a href="#" class="member-card">
+                <div class="photo-wrapper">
+                    <img src="images/bo_hou.png" alt="Student Name" class="member-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Student+Photo'">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">Bo Hou (侯博)</div>
+                    <div class="member-role">
+                        2nd Year Master Student<br>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 学生 4 (硕士示例) -->
+            <a href="#" class="member-card">
+                <div class="photo-wrapper">
+                    <img src="images/kai_zheng.jpeg" alt="Student Name" class="member-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Student+Photo'">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">Kai Zheng (郑凯)</div>
+                    <div class="member-role">
+                        1st Year Master Student<br>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 添加更多学生卡片... -->
+
+        </div>
+
+        <!-- Graduated Students Section -->
+        <h2>Graduated Students</h2>
+        <div class="team-grid">
+            
+            <!-- 毕业生 1 -->
+            <a href="#" class="member-card">
+                <div class="photo-wrapper">
+                    <!-- 如果没有照片，可以使用通用头像或学校Logo -->
+                    <img src="images/xianjun_ni.jpg" alt="Graduated Student" class="member-photo" onerror="this.src='https://via.placeholder.com/300x400?text=Alumni'">
+                </div>
+                <div class="member-info">
+                    <div class="member-name">Xianjun Ni (倪衔军)</div>
+                    <div class="member-role">
+                        Master's Degree (2025)<br>
+                        Now at: Alibaba Group
+                    </div>
+                </div>
+            </a>
+
+             <!-- 毕业生 2 -->
+
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2025 Xin Tan. css design: Xiao Long.
+    </footer>
+</body>
+</html>
